@@ -12,13 +12,13 @@
 # # ----------- QUESTION - 02 ----------
 # # Write a recursive function to print all elements in a list.
 
-def print_list(list, n):
-    if(n == -1):
+def print_list(list, n =0):
+    if(n == len(list)):
         return
     else:
         print(list[n])
-        return print_list(list, (n-1))
+        return print_list(list, n+1)
     
 num = [1, 2, 3, 4, 5, 6]
 
-print_list(num, 5)
+print_list(num)
