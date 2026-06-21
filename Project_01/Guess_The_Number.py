@@ -1,10 +1,8 @@
-# My Version (Without Watching tutorial)
+# "My Version" (Without Watching tutorial)
 
 import random
 
 seleted_number = random.randint(1, 1000)
-print(seleted_number)
-
 
 def guess_number(guessed_number):
 
