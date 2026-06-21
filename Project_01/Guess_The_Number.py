@@ -4,6 +4,7 @@ import random
 
 seleted_number = random.randint(1, 1000)
 
+
 def guess_number(guessed_number):
 
     if guessed_number > seleted_number:
@@ -16,7 +17,7 @@ def guess_number(guessed_number):
         guess_number(guessed_number)
     
     else:
-        return print("HURRAH, YOU GUESSED IT RIGHT: ")
+        return print("HURRAH, YOU GUESSED IT RIGHT IN", attempt, "ATTEMPT")
         
 num = int(input("GUESS THE NUMBER: "))
 guess_number(num)
